@@ -8,9 +8,14 @@ namespace UserRegisteration
     class UserRegisterationForm
     {
         public string FIRSTNAME_REGEX = "^[A-Z]{1}[a-zA-Z]{3,}$";
+        public string LASTNAME_REGEX = "^[A-Z]{1}[a-zA-Z]{3,}$";
         public bool ValidateFirstName()
         {
             return Regex.IsMatch("Swetha",FIRSTNAME_REGEX);
+        }
+        public bool ValidateLastName()
+        {
+            return Regex.IsMatch("Eswar", LASTNAME_REGEX);
         }
     }
 }

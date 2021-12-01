@@ -9,7 +9,10 @@ namespace UserRegisteration
             Console.WriteLine("User Registeration form");
             UserRegisterationForm user = new UserRegisterationForm();
             bool result = user.ValidateFirstName();
-            Console.WriteLine("Name:"+result);
+            bool resultlast = user.ValidateLastName();
+            Console.WriteLine("Name:" + result);
+            Console.WriteLine("LastName:"+resultlast);
+
         }
     }
 }
