@@ -10,9 +10,10 @@ namespace UserRegisteration
             UserRegisterationForm user = new UserRegisterationForm();
             bool result = user.ValidateFirstName();
             bool resultlast = user.ValidateLastName();
+            bool resultemail = user.ValidateEmail();
             Console.WriteLine("Name:" + result);
-            Console.WriteLine("LastName:"+resultlast);
-
+           Console.WriteLine("LastName:"+resultlast);
+            Console.WriteLine("Email:"+resultemail);
         }
     }
 }
