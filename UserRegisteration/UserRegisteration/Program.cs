@@ -11,9 +11,11 @@ namespace UserRegisteration
             bool result = user.ValidateFirstName();
             bool resultlast = user.ValidateLastName();
             bool resultemail = user.ValidateEmail();
+            bool resultnumber = user.ValidatePhoneNumber();
             Console.WriteLine("Name:" + result);
-           Console.WriteLine("LastName:"+resultlast);
+            Console.WriteLine("LastName:"+resultlast);
             Console.WriteLine("Email:"+resultemail);
+            Console.WriteLine("PhoneNumber:" + resultnumber);
         }
     }
 }
